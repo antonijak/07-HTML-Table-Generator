@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>HTML Table Generator</title>
+</head>
+<body>
+  <header>
+    <h1>HTML Table Generator</h1>
+
+    <label for="num-of-rows">Enter number of rows</label>
+    <input type="number" id="num-of-rows">
+
+    <label for="num-of-columns">Enter number of columns</label>
+    <input type="number" id="num-of-columns"><br/>
+
+    <label for="table-width">Table width in percentage</label>
+    <input type="number" id="table-width">
+
+    <label for="border-width">Border width in pixels</label>
+    <input type="border" id="border-width"><br/>
+
+    <label for="table-background">Table background color</label>
+    <input type="color" id="table-background">
+
+    <label for="head-background">Head background color</label>
+    <input type="color" id="head-background">
+
+    <label for="body-background">Body background color</label>
+    <input type="color" id="body-background"><br/>
+
+    <label for="border-color">Border color</label>
+    <input type="color" id="border-color">
+
+    <label for="font-color">Font color</label>
+    <input type="color" id="font-color"><br/>
+
+    <label for="font-type">Font type</label>
+    <select id="font-type">
+        <option value="1">font1</option>
+        <option value="2">font2</option>
+        <option value="3">font3</option>
+    </select>
+
+    <label for="font-weight"></label>
+    <select id="font-weight">
+        <option value="100">100</option>
+        <option value="200">200</option>
+        <option value="300">300</option>
+    </select>
+
+    <label for="text-align">Text align</label>
+    <select id="text-align">
+        <option value="left">left</option>
+        <option value="center">center</option>
+        <option value="rught">right</option>
+    </select>
+
+    <button id="submit">Generate table</button>
+  </header>
+  <main></main>
+  <script src="./script.js"></script>
+</body>
+</html>

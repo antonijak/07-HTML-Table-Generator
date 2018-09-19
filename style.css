@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  width: 70%;
+  margin: auto;
+  background-color: lightgray;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+  margin-bottom: 1rem;
+}
+
+input {
+  margin: 5px 0;
+  line-height: 1.1rem;
+}
+
+main {
+  width: 70%;
+  margin: auto;
+}
+
+table {
+  margin: auto;
+}
+
+td, th {
+  line-height: 2rem;
+}
+
