@@ -12,6 +12,9 @@ const fontWght = document.querySelector('#font-weight');
 const txtAlign = document.querySelector('#text-align');
 const main = document.querySelector('main');
 const submit = document.querySelector('#submit');
+const copy = document.querySelector('#copy');
+let selection;
+let input;
 
 function createTable (){
   main.innerHTML = '';
@@ -20,6 +23,8 @@ function createTable (){
   table.style.backgroundColor = tableBckgr.value;
   table.style.borderWidth = `${borderWdth.value}px`;
   table.style.borderColor = borderClr.value;
+  table.style.borderStyle = 'solid';
+  table.style.borderCollapse = 'collapse';
   table.style.color = fontClr.value;
   table.style.fontFamily = fontTyp.value;
   table.style.fontWeight = fontWght.value;
@@ -37,6 +42,9 @@ function createTable (){
     tableHead.style.backgroundColor = headBckgr.value;
     tableHead.style.borderColor = borderClr.value;
     tableHead.style.borderWidth = `${borderWdth.value}px`;
+    tableHead.style.borderStyle = 'solid';
+    tableHead.style.lineHeight= '2rem';
+    tableHead.style.padding= '5px';
   }
   for (let rw = 1; rw < rows.value; rw++){
     
@@ -47,11 +55,30 @@ function createTable (){
     tableData.style.tableWidth = `${tableWdth.value}%`;
     tableData.style.borderWidth = `${borderWdth.value}px`;
     tableData.style.borderColor = borderClr.value;
+    tableData.style.borderStyle = 'solid';
+    tableData.style.lineHeight= '2rem';
+    tableData.style.padding= '5px';
     rowsInTable[rw].appendChild(tableData);
     }
   }
-
+   selection = document.querySelector('table');
+   console.log(selection);
+   input = document.createElement('input');
+   document.body.appendChild(input);
+   input.id = 'hidden-input'
+   input.value = selection.outerHTML;;
+   console.log(input.value);
+   
+   
 }
+
+function copyToClipboard (){
+  input.focus();
+  input.setSelectionRange(0, 9999);
+  document.execCommand('copy');
+}
+
+copy.addEventListener('click', copyToClipboard);  
 
 submit.addEventListener('click', createTable);
 

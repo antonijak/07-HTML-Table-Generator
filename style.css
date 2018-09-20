@@ -46,13 +46,18 @@ h1{
 input {
   margin: 7px 0;
   line-height: 1.1rem;
-  width: 2rem;
+  width: 2.5rem;
   display: inline-block;
   box-shadow: none;
   text-align: center;
   outline: none;
   border: none;
 }
+
+#hidden-input {
+  position: absolute;
+  left: -10000000px;
+  }
 
 
 select {
@@ -81,19 +86,15 @@ main {
 
 table {
   margin: auto;
-  border-style: solid;
-  border-collapse: collapse;
 }
 
 td, th {
-  line-height: 2rem;
   padding: 5px;
-  border-style: solid;
 }
 
-#submit {
+.buttons {
   padding: .7rem 1.2rem;
-  margin-top: 1rem;
+  margin: 1rem 1rem 1rem 0;
   font-size: .8rem;
   border: none;
   color: black;
@@ -102,11 +103,11 @@ td, th {
   outline: none;
 }
 
-#submit:hover {
+.buttons:hover {
   background-color: rgb(238, 236, 236);
 }
 
-#submit:active {
+.buttons:active {
   background-color: rgb(135, 132, 132);
 }
 
