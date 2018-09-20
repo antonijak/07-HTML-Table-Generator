@@ -68,7 +68,6 @@ select {
 label {
   margin: 7px 0;
   display: inline;
-  height: 1rem;
   min-width: 40%;
   text-align: left;
 }
@@ -125,33 +124,73 @@ td, th {
 
   #fonts{
     width: 100%;
-    display: flex;
-    flex-direction: column;
+
   }
 
   #fonts select {
     width: 7rem;
   }
+
+  #fonts label{
+    width: 60%;
+  }
 } 
 @media only screen and (max-width: 850px){
   .alignment {
     width: 100%;
+    padding: 0 3rem;
+  }
+
+  
+
+  #fonts {
+  flex-direction: row;
+  }
+
+  #fonts label {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 610px){
+
+  header {
+    font-size: .8rem;
+  }
+
+  .alignment {
+    width: 100%;
+    padding: 0 3rem;
+  }
+  .alignment label {
+    width: 60%;
+  }
+
+}
+
+
+@media only screen and (max-width: 400px){
+  
+  header {
+    font-size: .7rem;
+  }
+
+  .alignment {
+    padding: 0;
+  }
+  .alignment label {
+    width: 60%;
   }
 
   #fonts {
+    padding: 0;
     width: 100%;
     display: flex;
     flex-direction: row;
     min-width: 40%;
   }
-}
 
-@media only screen and (max-width: 400px){
-  .alignment {
-    padding: 0;
-  }
-
-  #fonts {
-    padding: 0;
+  #fonts label {
+    width: 50%;
   }
 }
