@@ -18,7 +18,7 @@ function createTable (){
   const table = document.createElement('table');
   table.style.width = `${tableWdth.value}%`;
   table.style.backgroundColor = tableBckgr.value;
-  table.style.borderWidth = `${borderWdth.value - .5}px`;
+  table.style.borderWidth = `${borderWdth.value}px`;
   table.style.borderColor = borderClr.value;
   table.style.color = fontClr.value;
   table.style.fontFamily = fontTyp.value;

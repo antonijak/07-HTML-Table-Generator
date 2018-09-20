@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,60 +9,66 @@
   <link rel="stylesheet" href="./style.css">
   <title>HTML Table Generator</title>
 </head>
+
 <body>
   <header>
     <h1>HTML Table Generator</h1>
+    <div id="wrapper">
+      <div class="alignment">
+        <label for="num-of-rows">Enter number of rows</label>
+        <input type="number" id="num-of-rows">
 
-    <label for="num-of-rows">Enter number of rows</label>
-    <input type="number" id="num-of-rows">
+        <label for="num-of-columns">Enter number of columns</label>
+        <input type="number" id="num-of-columns">
+      
+        <label for="table-width">Table width in percentage</label>
+        <input type="number" id="table-width">
 
-    <label for="num-of-columns">Enter number of columns</label>
-    <input type="number" id="num-of-columns"><br/>
+        <label for="border-width">Border width in pixels</label>
+        <input type="number" id="border-width">
+      </div>
+      <div class="alignment">
+        <label for="table-background">Table background color</label>
+        <input type="color" id="table-background" value="#ffffff">
 
-    <label for="table-width">Table width in percentage</label>
-    <input type="number" id="table-width">
+        <label for="head-background">Head background color</label>
+        <input type="color" id="head-background" value="#f2f2f2">
 
-    <label for="border-width">Border width in pixels</label>
-    <input type="border" id="border-width"><br/>
+        <label for="body-background">Body background color</label>
+        <input type="color" id="body-background" value="#e4d7e8">
 
-    <label for="table-background">Table background color</label>
-    <input type="color" id="table-background">
+        <label for="border-color">Border color</label>
+        <input type="color" id="border-color" value="#000000">
+      </div>
+      <div class="alignment" id="fonts">
+        <label for="font-color">Font color</label>
+        <input type="color" id="font-color" value="#000000">
 
-    <label for="head-background">Head background color</label>
-    <input type="color" id="head-background">
+        <label for="font-type">Font type</label>
+        <select id="font-type">
+          <option value="Courier New, monospace">Courier New</option>
+          <option value="Montserrat, sans-serif">Montserrat</option>
+          <option value="Arial, sans-serif">Arial</option>
+        </select>
 
-    <label for="body-background">Body background color</label>
-    <input type="color" id="body-background"><br/>
+        <label for="font-weight">Font Weight</label>
+        <select id="font-weight">
+          <option value="normal">normal</option>
+          <option value="bold">bold</option>
+        </select>
 
-    <label for="border-color">Border color</label>
-    <input type="color" id="border-color">
-
-    <label for="font-color">Font color</label>
-    <input type="color" id="font-color"><br/>
-
-    <label for="font-type">Font type</label>
-    <select id="font-type">
-        <option value="Courier New, monospace">Courier New</option>
-        <option value="Montserrat, sans-serif">Montserrat</option>
-        <option value="Arial, sans-serif">Arial</option>
-    </select>
-
-    <label for="font-weight"></label>
-    <select id="font-weight">
-        <option value="normal">normal</option>
-        <option value="bold">bold</option>
-    </select>
-
-    <label for="text-align">Text align</label>
-    <select id="text-align">
-        <option value="left">left</option>
-        <option value="center">center</option>
-        <option value="right">right</option>
-    </select>
-
+        <label for="text-align">Text align</label>
+        <select id="text-align">
+          <option value="left">left</option>
+          <option value="center">center</option>
+          <option value="right">right</option>
+        </select>
+      </div>
+    </div>
     <button id="submit">Generate table</button>
   </header>
   <main></main>
   <script src="./script.js"></script>
 </body>
+
 </html>

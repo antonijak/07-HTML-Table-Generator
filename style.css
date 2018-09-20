@@ -4,27 +4,78 @@
 }
 
 header {
-  width: 70%;
+  width: 80%;
   margin: auto;
-  background-color: lightgray;
-  padding: 2rem;
+  background-color: rgb(245, 244, 244);
+  padding: 2rem 2rem;
   text-align: center;
-  font-size: 1.1rem;
+  font-size: .9rem;
   font-family: 'Montserrat', sans-serif;
+  height: fit-content;
 }
 
 h1{
-  margin-bottom: 1rem;
-  width: 100%;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
+
+#wrapper{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+.alignment {
+  width: 35%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+#fonts label{
+  width: 46%;
+  text-align: left;
+}
+
+#fonts {
+  width: 30%;
 }
 
 input {
-  margin: 5px 0;
+  margin: 7px 0;
   line-height: 1.1rem;
+  width: 2rem;
+  display: inline-block;
+  box-shadow: none;
+  text-align: center;
+  outline: none;
+  border: none;
 }
 
+
+select {
+  margin: 7px 0;
+  border: none;
+  font-size: .7rem;
+  height: 1.3rem;
+  outline: none;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+label {
+  margin: 7px 0;
+  display: inline;
+  height: 1rem;
+  min-width: 40%;
+  text-align: left;
+}
+
+
 main {
-  width: 70%;
+  width: 80%;
   margin: auto;
   padding: 2rem;
 }
@@ -41,3 +92,66 @@ td, th {
   border-style: solid;
 }
 
+#submit {
+  padding: .7rem 1.2rem;
+  margin-top: 1rem;
+  font-size: .8rem;
+  border: none;
+  color: black;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  outline: none;
+}
+
+#submit:hover {
+  background-color: rgb(238, 236, 236);
+}
+
+#submit:active {
+  background-color: rgb(135, 132, 132);
+}
+
+@media only screen and (max-width: 1151px){
+  header, main {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 920px){
+  .alignment {
+    width: 50%;
+    padding: 0 10%;
+  }
+
+  #fonts{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #fonts select {
+    width: 7rem;
+  }
+} 
+@media only screen and (max-width: 850px){
+  .alignment {
+    width: 100%;
+  }
+
+  #fonts {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    min-width: 40%;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .alignment {
+    padding: 0;
+  }
+
+  #fonts {
+    padding: 0;
+  }
+}
