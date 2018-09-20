@@ -15,6 +15,7 @@ header {
 
 h1{
   margin-bottom: 1rem;
+  width: 100%;
 }
 
 input {
@@ -25,13 +26,18 @@ input {
 main {
   width: 70%;
   margin: auto;
+  padding: 2rem;
 }
 
 table {
   margin: auto;
+  border-style: solid;
+  border-collapse: collapse;
 }
 
 td, th {
   line-height: 2rem;
+  padding: 5px;
+  border-style: solid;
 }
 

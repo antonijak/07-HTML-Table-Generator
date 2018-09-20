@@ -17,10 +17,14 @@ function createTable (){
   main.innerHTML = '';
   const table = document.createElement('table');
   table.style.width = `${tableWdth.value}%`;
-  table.style.borderWidth = borderWdth.value;
   table.style.backgroundColor = tableBckgr.value;
-  table.style.textAlign = txtAlign.value;
+  table.style.borderWidth = `${borderWdth.value - .5}px`;
+  table.style.borderColor = borderClr.value;
+  table.style.color = fontClr.value;
+  table.style.fontFamily = fontTyp.value;
+  table.style.fontWeight = fontWght.value;
   main.appendChild(table);
+  main.style.backgroundColor = bodyBckgr.value;
   for (let i = 0; i < rows.value; i++){
     const row = document.createElement('tr');
     table.appendChild(row);
@@ -28,15 +32,21 @@ function createTable (){
   const rowsInTable = document.querySelectorAll('tr');
   for (let i = 0; i < columns.value; i++){
     const tableHead = document.createElement('th');
-    tableHead.textContent = 'th';
+    tableHead.textContent = `Head${i + 1}`;
     rowsInTable[0].appendChild(tableHead);
+    tableHead.style.backgroundColor = headBckgr.value;
+    tableHead.style.borderColor = borderClr.value;
+    tableHead.style.borderWidth = `${borderWdth.value}px`;
   }
   for (let rw = 1; rw < rows.value; rw++){
     
     for (let clm = 0; clm < columns.value; clm++){
     const tableData = document.createElement('td');
-    tableData.textContent = 'td';
-    tableData.style.textAlign = 
+    tableData.textContent = 'value';
+    tableData.style.textAlign = txtAlign.value;
+    tableData.style.tableWidth = `${tableWdth.value}%`;
+    tableData.style.borderWidth = `${borderWdth.value}px`;
+    tableData.style.borderColor = borderClr.value;
     rowsInTable[rw].appendChild(tableData);
     }
   }
@@ -44,3 +54,4 @@ function createTable (){
 }
 
 submit.addEventListener('click', createTable);
+
