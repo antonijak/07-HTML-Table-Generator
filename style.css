@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 header {
   width: 80%;
   margin: auto;
@@ -10,7 +14,6 @@ header {
   padding: 2rem 2rem;
   text-align: center;
   font-size: .9rem;
-  font-family: 'Montserrat', sans-serif;
   height: fit-content;
 }
 
@@ -109,6 +112,13 @@ td, th {
 
 .buttons:active {
   background-color: rgb(135, 132, 132);
+}
+
+#temporary {
+  text-align: center;
+  color: rgb(184, 184, 184);
+  font-weight: normal;
+  margin-top: 2rem;
 }
 
 @media only screen and (max-width: 1151px){
