@@ -6,7 +6,7 @@
 header {
   width: 80%;
   margin: auto;
-  background-color: rgb(245, 244, 244);
+  background-color: rgb(227, 227, 227);
   padding: 2rem 2rem;
   text-align: center;
   font-size: .9rem;
@@ -23,7 +23,6 @@ h1{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 .alignment {
@@ -59,7 +58,6 @@ input {
   left: -10000000px;
   }
 
-
 select {
   margin: 7px 0;
   border: none;
@@ -77,7 +75,6 @@ label {
   text-align: left;
 }
 
-
 main {
   width: 80%;
   margin: auto;
@@ -86,10 +83,13 @@ main {
 
 table {
   margin: auto;
+  table-layout: fixed;
 }
 
 td, th {
   padding: 5px;
+  overflow: hidden;
+  color: rgb(52, 49, 49);
 }
 
 .buttons {
@@ -115,6 +115,10 @@ td, th {
   header, main {
     width: 100%;
   }
+
+  table {
+    font-size: 0.8rem;
+  }
 }
 
 @media only screen and (max-width: 920px){
@@ -136,13 +140,12 @@ td, th {
     width: 60%;
   }
 } 
+
 @media only screen and (max-width: 850px){
   .alignment {
     width: 100%;
     padding: 0 3rem;
   }
-
-  
 
   #fonts {
   flex-direction: row;
@@ -151,6 +154,10 @@ td, th {
   #fonts label {
     width: 60%;
   }
+
+  table {
+    font-size: 0.7rem;
+  }
 }
 
 @media only screen and (max-width: 610px){
@@ -158,13 +165,25 @@ td, th {
   header {
     font-size: .8rem;
   }
+  h1 {
+    font-size: 1.8rem;
+  }
 
   .alignment {
     width: 100%;
     padding: 0 3rem;
   }
+
   .alignment label {
     width: 60%;
+  }
+
+  table {
+    font-size: 0.6rem;
+  }
+
+  main {
+    padding: 1rem 1rem;
   }
 
 }
@@ -174,6 +193,10 @@ td, th {
   
   header {
     font-size: .7rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
   }
 
   .alignment {
@@ -193,5 +216,13 @@ td, th {
 
   #fonts label {
     width: 50%;
+  }
+
+  table {
+    font-size: 0.5rem;
+  }
+
+  main {
+    padding: 1rem 0;
   }
 }

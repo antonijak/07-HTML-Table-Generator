@@ -62,16 +62,11 @@ function createTable (){
     }
   }
    selection = document.querySelector('table');
-   console.log(selection);
    input = document.createElement('input');
    document.body.appendChild(input);
    input.id = 'hidden-input'
    input.value = selection.outerHTML;;
-   console.log(input.value);
-   
-   
 }
-
 function copyToClipboard (){
   input.focus();
   input.setSelectionRange(0, 9999);
@@ -79,6 +74,5 @@ function copyToClipboard (){
 }
 
 copy.addEventListener('click', copyToClipboard);  
-
 submit.addEventListener('click', createTable);
 
