@@ -5,6 +5,8 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 header {
@@ -13,16 +15,16 @@ header {
   background-color: rgb(227, 227, 227);
   padding: 2rem 2rem;
   text-align: center;
-  font-size: .9rem;
+  font-size: 0.9rem;
   height: fit-content;
 }
 
-h1{
+h1 {
   margin-bottom: 3rem;
   font-size: 2.5rem;
 }
 
-#wrapper{
+#wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -36,7 +38,7 @@ h1{
   padding: 0 2rem;
 }
 
-#fonts label{
+#fonts label {
   width: 46%;
   text-align: left;
 }
@@ -59,12 +61,12 @@ input {
 #hidden-input {
   position: absolute;
   left: -10000000px;
-  }
+}
 
 select {
   margin: 7px 0;
   border: none;
-  font-size: .7rem;
+  font-size: 0.7rem;
   height: 1.3rem;
   outline: none;
   background-color: white;
@@ -89,16 +91,17 @@ table {
   table-layout: fixed;
 }
 
-td, th {
+td,
+th {
   padding: 5px;
   overflow: hidden;
   color: rgb(52, 49, 49);
 }
 
 .buttons {
-  padding: .7rem 1.2rem;
+  padding: 0.7rem 1.2rem;
   margin: 1rem 1rem 1rem 0;
-  font-size: .8rem;
+  font-size: 0.8rem;
   border: none;
   color: black;
   background-color: white;
@@ -121,8 +124,9 @@ td, th {
   margin-top: 2rem;
 }
 
-@media only screen and (max-width: 1151px){
-  header, main {
+@media only screen and (max-width: 1151px) {
+  header,
+  main {
     width: 100%;
   }
 
@@ -131,34 +135,33 @@ td, th {
   }
 }
 
-@media only screen and (max-width: 920px){
+@media only screen and (max-width: 920px) {
   .alignment {
     width: 50%;
     padding: 0 10%;
   }
 
-  #fonts{
+  #fonts {
     width: 100%;
-
   }
 
   #fonts select {
     width: 7rem;
   }
 
-  #fonts label{
+  #fonts label {
     width: 60%;
   }
-} 
+}
 
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 850px) {
   .alignment {
     width: 100%;
     padding: 0 3rem;
   }
 
   #fonts {
-  flex-direction: row;
+    flex-direction: row;
   }
 
   #fonts label {
@@ -170,10 +173,9 @@ td, th {
   }
 }
 
-@media only screen and (max-width: 610px){
-
+@media only screen and (max-width: 610px) {
   header {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
   h1 {
     font-size: 1.8rem;
@@ -195,14 +197,11 @@ td, th {
   main {
     padding: 1rem 1rem;
   }
-
 }
 
-
-@media only screen and (max-width: 400px){
-  
+@media only screen and (max-width: 400px) {
   header {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   h1 {
